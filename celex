@@ -1,0 +1,335 @@
+getgenv().Celex = {
+    Preload = {
+        ['Whitelist Key'] = "",
+        ['Intro'] = true,
+    },
+
+    Universal = {
+        ['Ping Prediction'] = false,
+
+        ['Resolver'] = {
+            ['Enabled'] = true, 
+            ['Always On'] = true
+        },
+
+        ['Cursor Offset'] = {
+            ['Enabled'] = true, 
+            ['X'] = 0, 
+            ['Y'] = 0
+        },
+
+        ['Memory Spoofer'] = {
+            ['Enabled'] = true, 
+            ['MinimumRange'] = 700, 
+            ['MaxRange'] = 900,
+        },
+
+        ['Use One Key For Silent & Assist'] = true,
+        ['BothKey'] = "C",
+    },
+
+    Silent = {
+        ['Enabled'] = true,
+        ['Type'] = "Blatant", -- Safe / Blatant | BLATANT WILL DISABLE ANTI AIM VIEW
+        ['Mode'] = "Target", -- FOV, Target
+        ['Keybind'] = "C", 
+	
+        ['Sticky FOV'] = false,
+
+        ['Predict Movement'] = true, 
+        ['Prediction Horizontal'] = 0.167,
+        ['Prediction Vertical'] = 0.05,
+
+        ['Notify On Lock'] = true, 
+
+        ['Hit Chance'] = 100,
+        ['Airshot HitChance'] = 100,
+
+        ['HitParts'] = {"Head", "Torso", "Arms", "Legs"}, -- Head, Torso, Arms, Legs
+        ['HitPartType'] = "EEEw", -- "Nearest Part", "Nearest Point"
+
+        ['Visualizer'] = true,
+        ['Visualizer_DOT'] = {
+            ['Enabled'] = true, 
+            ['Color'] = Color3.fromRGB(0,21,209)
+        },
+        ['Visualizer_Tracer'] = {
+            ['Enabled'] = true, 
+            ['Thickness'] = 0.5, 
+            ['Color'] = Color3.fromRGB(0,21,209)
+        },
+    },
+
+    Assist = {
+        ['Enabled'] = true,
+        ['Only Enable While Holding Gun'] = false,
+        ['Disable When Typing'] = true,
+        ['Disable When Reloading'] = true,
+        ['Keybind'] = "Q",
+    
+        ['Sticky FOV'] = false, -- // Makes it so FOV follows your target. 
+
+        ['Predict Movement'] = true, 
+        ['Prediction Horizontal'] = 0.167,
+        ['Prediction Vertical'] = 0.05,
+
+        ['HitParts'] = {"Head", "Torso", "Arms", "Legs"}, -- Head, Torso, Arms, Legs
+
+        ['Smoothing Ammount'] = 1,
+        ['In Air Smoothing'] = 1,
+
+        ['Shake'] = {
+            ['Enabled'] = false, 
+            ['Multiplier'] = 0.1,
+
+            ['X'] = 15, 
+            ['Y'] = 15, 
+            ['Z'] = 15, 
+
+            ['Airshot Settings'] = false,
+            ['Airshot Multiplier'] = 0.1,
+            ['Air X'] = 35, 
+            ['Air Y'] = 35, 
+            ['Air Z'] = 35, 
+        },
+
+        ['EasingStyle'] = ("Linear"),
+        --[[  Linear, Sine, Back, Quad, Quar, Quint, Bounce, Elastic, Exponential, Circular, Cubic  ]]--
+                    --[[ https://create.roblox.com/docs/reference/engine/enums/EasingStyle ]]--
+    },
+
+    Safety = {
+        ['Hide Visuals'] = {
+            ['Enabled'] = false,
+            ['Key_1'] = "G",
+            ['Key_2'] = "O",
+        },
+        ['Panic Key'] = {
+            ['Enabled'] = true,
+            ['Key_1'] = "X",
+            ['Key_2'] = "T",
+        },
+        ['Leave On Staff Join'] = true,
+        ['Anti Ground Shots'] = true, -- // DISABLES PREDICTION ON THE Y AXIS.
+    },
+
+    Checks = {
+        ['Global'] = {
+            ['Wall'] = true, 
+            ['Visible'] = true,
+            ['Forcefield'] = true, 
+            ['Team'] = false,
+            ['Alive'] = true, 
+            ['Friend'] = false,
+            ['Knocked'] = true,
+            ['Crew'] = true,
+        },
+        ['Silent'] = {
+            ['Wall'] = true, 
+            ['Visible'] = true,
+            ['Forcefield'] = true, 
+            ['Team'] = false,
+            ['Alive'] = true, 
+            ['Friend'] = false,
+            ['Knocked'] = true,
+            ['Crew'] = true,
+        },
+        ['Assist'] = {
+            ['Wall'] = true, 
+            ['Visible'] = true,
+            ['Forcefield'] = true, 
+            ['Team'] = false,
+            ['Alive'] = true, 
+            ['Friend'] = false,
+            ['Knocked'] = true,
+            ['Crew'] = true,
+        },
+        ['ESP'] = {
+            ['Wall'] = true, 
+            ['Visible'] = true,
+            ['Forcefield'] = true, 
+            ['Alive'] = true,
+        },
+    },
+
+    FOV_Settings = {
+        ['Dynamic'] = {
+            ['Enabled'] = false,
+
+            ['Close Distance'] = 20, 
+            ['Medium Distance'] = 40,
+            ['Far Distance'] = 70,
+
+            ['Close FOV'] = 40,
+            ["Medium FOV"] = 25,
+            ['Far FOV'] = 10,
+        },
+
+        ['Silent'] = {
+            ['Visible'] = true,
+            ['Filled'] = false,
+            ['Color'] = Color3.fromRGB(152, 0, 0),
+            ['Radius'] = 15,
+        },
+
+        ['Assist'] = {
+            ['Visible'] = true,
+            ['Filled'] = false,
+            ['Color'] = Color3.fromRGB(255, 255, 255),
+            ['Radius'] = 15,
+        },
+    },
+
+    FakeSpike = {
+        ['Enabled'] = false,
+        ['Keybind'] = "K",
+        ['Ammount'] = 250,
+    },
+
+    Macro = {
+        ['Enabled'] = false,
+        ['Type'] = 'First', -- First, Third
+        ['BypassMacroAbuse'] = true,
+        ['Keybind'] = "X",
+
+        ['Noclip_Macro'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = "H",
+            ['Gun'] = '[Shotgun]',
+        },
+    },
+
+    Sorting = {
+        ['Enabled'] = false,
+        ['Keybind'] = "Equals",
+
+        ['Slot 1'] = "[Double-Barrel SG]",
+        ['Slot 2'] = "[Revolver]",
+        ['Slot 3'] = "[Cookie]",
+        ['Slot 4'] = "[Chicken]",
+        ['Slot 5'] = "[Chicken]",
+        ['Slot 6'] = "[Pizza]",
+        ['Slot 7'] = "[Pizza]",
+        ['Slot 8'] = "",
+        ['Slot 9'] = "",
+        ['Slot 0'] = "[Katana]",
+    },
+
+    ESP = {
+        Main = {
+            ['Enabled'] = false,
+
+            ['Name'] = {
+                ['Enabled'] = true,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+            },
+
+            ['Box'] = {
+                ['Enabled'] = false,
+                ['BoxColor'] = Color3.fromRGB(132, 0, 0),
+                ['BoxFillColor'] = Color3.fromRGB(0, 0, 0),
+            },
+
+            ['HealthBar'] = {
+                ['Enabled'] = true,
+                ['Number'] = true,
+                ['HighHealthColor'] = Color3.fromRGB(0, 255, 0),
+                ['LowHealthColor'] = Color3.fromRGB(255, 0, 0),
+            },
+
+            ['ArmorBar'] = {
+                ['Enabled'] = true,
+                ['Number'] = true,
+                ['HighArmorColor'] = Color3.fromRGB(0, 102, 204),
+                ['LowArmorColor'] = Color3.fromRGB(114, 185,255),
+            },
+
+            ['Tool'] = {
+                ['Enabled'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+            },
+
+            ['Distance'] = {
+                ['Enabled'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+            },
+
+            ['Flags'] = {
+                ['Enabled'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+                ['Display Name'] = true,
+                ['Moving'] = true,
+                ['Jumping'] = true,
+            },
+        },
+        Settings = {
+            ['UseDisplayName'] = true,
+            ['EspFadeOut'] = 400,
+        }
+    },
+
+    Misc = {
+        ['FPS Boost'] = false,
+
+        ['Auto Settings'] = {
+            ['Force Mute Boombox'] = false,
+            ['Auto Reload'] = false,
+        },
+
+        ['Frame Skip'] = {
+            ['Enabled'] = false,
+        },
+
+        ['360 Bind'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = "G"
+        },
+
+        ['Gun Settings'] = {
+            ['Enabled'] = false,
+            ['Change FOV'] = false,
+            ['Change Prediction'] = false,
+            ['Change Hitchance'] = false,
+            ['Change Smoothing'] = false,
+            ['Change Airshot Smoothing'] = false,
+            
+            ['Double-Barrel SG'] = {
+                ['Silent FOV'] = (15), 
+                ['Assist FOV'] = (5), 
+                ['Hit Chance'] = 100, 
+                ['Prediction Horizontal'] = 0.167,
+                ['Prediction Vertical'] = 0.05,
+                ['Smoothing'] = 0.0025,
+                ['Airshot Smoothing'] = 0.0025,
+            },
+            ['Shotgun'] = {
+                ['Silent FOV'] = (10), 
+                ['Assist FOV'] = (5), 
+                ['Hit Chance'] = 100, 
+                ['Prediction Horizontal'] = 0.167,
+                ['Prediction Vertical'] = 0.05,
+                ['Smoothing'] = 0.0025,
+                ['Airshot Smoothing'] = 0.0025,
+            },
+            ['TacticalShotgun'] = {
+                ['Silent FOV'] = (10), 
+                ['Assist FOV'] = (5), 
+                ['Hit Chance'] = 100, 
+                ['Prediction Horizontal'] = 0.167,
+                ['Prediction Vertical'] = 0.05,
+                ['Smoothing'] = 0.0025,
+                ['Airshot Smoothing'] = 0.0025,
+            },
+            ['Revolver'] = {
+                ['Silent FOV'] = (10), 
+                ['Assist FOV'] = (2), 
+                ['Hit Chance'] = 100, 
+                ['Prediction Horizontal'] = 0.167,
+                ['Prediction Vertical'] = 0.05,
+                ['Smoothing'] = 0.0025,
+                ['Airshot Smoothing'] = 0.0025,
+            },
+
+        },
+    },
+}
